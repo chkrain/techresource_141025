@@ -1,5 +1,7 @@
 import os
 import sys
+from dotenv import load_dotenv
+load_dotenv()
 
 # os.environ["QT_API"] = "pyqt6"
 sys.argv += ['--opentsdb','127.0.0.1','--grafana=127.0.0.1',f'--grafana_key={os.getenv('GRAFANA_KEY')}']

@@ -1,0 +1,2506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Zone_2</class>
+ <widget class="QWidget" name="Zone_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2072</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>СОРТИРОВКА</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources.qrc">
+    <normaloff>:/TREPEL/resources/separation.png</normaloff>:/TREPEL/resources/separation.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget,#Zone_2
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(73, 73, 73, 255), stop:1 rgba(133, 133, 133, 255));
+}
+QAbstractButton:flat
+{
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+QAbstractButton:flat:pressed
+{
+	background-color: green;
+}
+QAbstractButton:flat[style=&quot;open&quot;]
+{
+	image: url(:/concrete/stop.png);
+}
+QAbstractButton:flat:pressed[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QAbstractButton:flat:checked[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QLabel[style=&quot;huge&quot;]
+{
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+QLabel[style=&quot;gigantic&quot;]
+{
+	font-size: 32pt;
+	font-weight: bold;
+	color: white;
+}
+
+QLabel[style=&quot;badge&quot;]
+{
+	border: 1px solid red;
+	background-color: rgba(0,0,0,100);
+	color: white;
+	border-radius: 4px;
+}
+QLabel[style=&quot;vodoley-status&quot;]
+{
+	border: none;
+	background-color: rgb(98, 160, 234);
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding: 8px;
+}
+QLabel[style='hint']
+{
+	color: lightGray;
+	font-weight: bold;
+	font-size: 10pt;
+}
+QLabel[style='tips']
+{
+	color: lightGray;
+	font-size: 7pt;
+}
+QLabel[style='sys']
+{
+	color: yellow;
+	font-size: 7pt;
+}
+QGroupBox[style=&quot;vodoley&quot;]
+{
+	background-color: rgb(94, 92, 100);
+	border: 1px solid gray;
+}
+QAbstractButton:flat[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,255);
+	color: white;
+}
+QAbstractButton:flat[style=&quot;warning&quot;]
+{
+	background-color: rgba(46, 194, 126,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;warning&quot;]
+{
+	background-color: rgb(46, 194, 126);
+	color: white;
+}
+QLabel[style=&quot;checkpoint&quot;]
+{
+	border: 2px solid darkGray;
+	background-color: gray;
+	font-size: 15pt;
+	border-radius: 21px;
+	padding: 8px;
+	color: silver;
+}
+QLabel:enabled[style=&quot;checkpoint&quot;]
+{
+	border-color: darkGreen;
+	background-color: green;
+	color: white;
+}
+QWidget[style=&quot;connector&quot;]
+{
+	color: darkGray;
+}
+QWidget:enabled[style=&quot;connector&quot;]
+{
+	color: green;
+}
+</string>
+  </property>
+  <widget class="Animation" name="machine_14">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>210</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="machine_15">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>270</y>
+     <width>127</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/валковая.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="machine_16">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>399</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="machine_17">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>504</y>
+     <width>127</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/сито.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="machine_19">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>620</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="machine_18">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>654</y>
+     <width>374</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="machine_20">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>674</y>
+     <width>352</width>
+     <height>208</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/irconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="valve_2">
+   <property name="geometry">
+    <rect>
+     <x>262</x>
+     <y>820</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/valve.mng</string>
+    </url>
+   </property>
+   <property name="playbackHints">
+    <set>Animation::Bounce</set>
+   </property>
+  </widget>
+  <widget class="Animation" name="machine_22">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>770</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/auger.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>326</x>
+     <y>308</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>414</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>774</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>862</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>1370</x>
+     <y>880</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gear_14">
+   <property name="geometry">
+    <rect>
+     <x>119</x>
+     <y>210</y>
+     <width>200</width>
+     <height>193</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Конв. на дробилку М14</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>14</number>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gear_16">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>464</y>
+     <width>200</width>
+     <height>193</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Конв. на грохот М16</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>16</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>531</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gear_18">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>718</y>
+     <width>200</width>
+     <height>193</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Конв. на бункер М18</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>18</number>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gear_20">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>712</y>
+     <width>200</width>
+     <height>193</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Конв. на фасовку М20</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gear_19">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>690</y>
+     <width>200</width>
+     <height>193</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Конв. на бункер М19</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>19</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>760</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>783</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Gear" name="gear_15">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>210</y>
+     <width>200</width>
+     <height>197</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ДРОБИЛКА (15)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>15</number>
+   </property>
+  </widget>
+  <widget class="Gear" name="gear_17">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>464</y>
+     <width>200</width>
+     <height>197</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ГРОХОТ (17)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>17</number>
+   </property>
+  </widget>
+  <widget class="Auger" name="gear_22">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>690</y>
+     <width>200</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ШНЕК (22)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_9">
+   <property name="geometry">
+    <rect>
+     <x>966</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_14">
+   <property name="geometry">
+    <rect>
+     <x>1486</x>
+     <y>17</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_8">
+   <property name="geometry">
+    <rect>
+     <x>879</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_17">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>90</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_12">
+   <property name="geometry">
+    <rect>
+     <x>1306</x>
+     <y>29</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_3">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_16">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>51</y>
+     <width>54</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_10">
+   <property name="geometry">
+    <rect>
+     <x>1067</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_12">
+   <property name="geometry">
+    <rect>
+     <x>1286</x>
+     <y>17</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_25">
+   <property name="geometry">
+    <rect>
+     <x>1716</x>
+     <y>22</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_2">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_19">
+   <property name="geometry">
+    <rect>
+     <x>1286</x>
+     <y>120</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_2">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_5">
+   <property name="geometry">
+    <rect>
+     <x>529</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_8">
+   <property name="geometry">
+    <rect>
+     <x>861</x>
+     <y>95</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_11">
+   <property name="geometry">
+    <rect>
+     <x>1176</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_5">
+   <property name="geometry">
+    <rect>
+     <x>556</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_22">
+   <property name="geometry">
+    <rect>
+     <x>1821</x>
+     <y>69</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_8">
+   <property name="geometry">
+    <rect>
+     <x>856</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_8">
+   <property name="geometry">
+    <rect>
+     <x>966</x>
+     <y>95</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_16">
+   <property name="geometry">
+    <rect>
+     <x>749</x>
+     <y>90</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_15">
+   <property name="geometry">
+    <rect>
+     <x>1596</x>
+     <y>17</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_13">
+   <property name="geometry">
+    <rect>
+     <x>1386</x>
+     <y>17</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_18">
+   <property name="geometry">
+    <rect>
+     <x>1387</x>
+     <y>70</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_19">
+   <property name="geometry">
+    <rect>
+     <x>1280</x>
+     <y>20</y>
+     <width>54</width>
+     <height>112</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_7">
+   <property name="geometry">
+    <rect>
+     <x>747</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_7">
+   <property name="geometry">
+    <rect>
+     <x>774</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_1">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_3">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_22">
+   <property name="geometry">
+    <rect>
+     <x>1716</x>
+     <y>71</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_13">
+   <property name="geometry">
+    <rect>
+     <x>1407</x>
+     <y>29</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_1">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_15">
+   <property name="geometry">
+    <rect>
+     <x>666</x>
+     <y>102</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_11">
+   <property name="geometry">
+    <rect>
+     <x>1204</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_20">
+   <property name="geometry">
+    <rect>
+     <x>1716</x>
+     <y>123</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_10">
+   <property name="geometry">
+    <rect>
+     <x>1092</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_6">
+   <property name="geometry">
+    <rect>
+     <x>662</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_20">
+   <property name="geometry">
+    <rect>
+     <x>1821</x>
+     <y>121</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_9">
+   <property name="geometry">
+    <rect>
+     <x>986</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_14">
+   <property name="geometry">
+    <rect>
+     <x>1516</x>
+     <y>29</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_4">
+   <property name="geometry">
+    <rect>
+     <x>449</x>
+     <y>28</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_18">
+   <property name="geometry">
+    <rect>
+     <x>1307</x>
+     <y>132</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_20">
+   <property name="geometry">
+    <rect>
+     <x>1386</x>
+     <y>120</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_17">
+   <property name="geometry">
+    <rect>
+     <x>1380</x>
+     <y>26</y>
+     <width>54</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_6">
+   <property name="geometry">
+    <rect>
+     <x>638</x>
+     <y>16</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_25">
+   <property name="geometry">
+    <rect>
+     <x>1821</x>
+     <y>21</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_20">
+   <property name="geometry">
+    <rect>
+     <x>788</x>
+     <y>101</y>
+     <width>72</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_21">
+   <property name="geometry">
+    <rect>
+     <x>1426</x>
+     <y>131</y>
+     <width>289</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_22">
+   <property name="geometry">
+    <rect>
+     <x>1427</x>
+     <y>80</y>
+     <width>289</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_23">
+   <property name="geometry">
+    <rect>
+     <x>1636</x>
+     <y>28</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_21">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>200</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_22">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>250</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_23">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>350</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_24">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>300</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_25">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>500</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_26">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>550</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_27">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>450</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_28">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>400</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_29">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>300</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_30">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>500</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_31">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>550</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_32">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>350</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_33">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>450</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_34">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>250</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_35">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>400</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_36">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>200</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_37">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>300</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_40">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>350</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_41">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>450</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_42">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>250</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_43">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>400</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_44">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>200</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>200</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>250</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>350</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>300</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>550</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>500</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>450</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>400</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>500</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>350</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>300</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>250</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>550</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>400</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>200</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>450</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>450</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_26">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>400</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>300</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>200</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>350</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>250</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <zorder>connector_20</zorder>
+  <zorder>connector_21</zorder>
+  <zorder>connector_22</zorder>
+  <zorder>connector_23</zorder>
+  <zorder>start_22</zorder>
+  <zorder>stop_22</zorder>
+  <zorder>stop_20</zorder>
+  <zorder>start_20</zorder>
+  <zorder>connector_17</zorder>
+  <zorder>connector_19</zorder>
+  <zorder>connector_18</zorder>
+  <zorder>machine_14</zorder>
+  <zorder>machine_15</zorder>
+  <zorder>machine_16</zorder>
+  <zorder>machine_17</zorder>
+  <zorder>machine_19</zorder>
+  <zorder>machine_18</zorder>
+  <zorder>machine_20</zorder>
+  <zorder>valve_2</zorder>
+  <zorder>machine_22</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>gear_14</zorder>
+  <zorder>gear_16</zorder>
+  <zorder>label_4</zorder>
+  <zorder>gear_18</zorder>
+  <zorder>gear_20</zorder>
+  <zorder>gear_19</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>gear_15</zorder>
+  <zorder>gear_17</zorder>
+  <zorder>gear_22</zorder>
+  <zorder>connector_8</zorder>
+  <zorder>connector_12</zorder>
+  <zorder>connector_16</zorder>
+  <zorder>start_25</zorder>
+  <zorder>connector_2</zorder>
+  <zorder>start_8</zorder>
+  <zorder>connector_5</zorder>
+  <zorder>stop_8</zorder>
+  <zorder>connector_7</zorder>
+  <zorder>connector_3</zorder>
+  <zorder>connector_13</zorder>
+  <zorder>connector_1</zorder>
+  <zorder>connector_15</zorder>
+  <zorder>connector_11</zorder>
+  <zorder>connector_10</zorder>
+  <zorder>connector_6</zorder>
+  <zorder>connector_9</zorder>
+  <zorder>connector_14</zorder>
+  <zorder>connector_4</zorder>
+  <zorder>stop_25</zorder>
+  <zorder>checkpoint_1</zorder>
+  <zorder>checkpoint_9</zorder>
+  <zorder>checkpoint_2</zorder>
+  <zorder>checkpoint_6</zorder>
+  <zorder>checkpoint_5</zorder>
+  <zorder>checkpoint_7</zorder>
+  <zorder>checkpoint_12</zorder>
+  <zorder>checkpoint_14</zorder>
+  <zorder>checkpoint_8</zorder>
+  <zorder>checkpoint_15</zorder>
+  <zorder>checkpoint_11</zorder>
+  <zorder>checkpoint_3</zorder>
+  <zorder>checkpoint_13</zorder>
+  <zorder>checkpoint_4</zorder>
+  <zorder>checkpoint_10</zorder>
+  <zorder>checkpoint_20</zorder>
+  <zorder>checkpoint_19</zorder>
+  <zorder>checkpoint_18</zorder>
+  <zorder>checkpoint_16</zorder>
+  <zorder>checkpoint_17</zorder>
+  <zorder>checkpoint_21</zorder>
+  <zorder>checkpoint_22</zorder>
+  <zorder>checkpoint_23</zorder>
+  <zorder>checkpoint_24</zorder>
+  <zorder>checkpoint_25</zorder>
+  <zorder>checkpoint_26</zorder>
+  <zorder>checkpoint_27</zorder>
+  <zorder>checkpoint_28</zorder>
+  <zorder>checkpoint_29</zorder>
+  <zorder>checkpoint_30</zorder>
+  <zorder>checkpoint_31</zorder>
+  <zorder>checkpoint_32</zorder>
+  <zorder>checkpoint_33</zorder>
+  <zorder>checkpoint_34</zorder>
+  <zorder>checkpoint_35</zorder>
+  <zorder>checkpoint_36</zorder>
+  <zorder>checkpoint_37</zorder>
+  <zorder>checkpoint_40</zorder>
+  <zorder>checkpoint_41</zorder>
+  <zorder>checkpoint_42</zorder>
+  <zorder>checkpoint_43</zorder>
+  <zorder>checkpoint_44</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_13</zorder>
+  <zorder>label_14</zorder>
+  <zorder>label_15</zorder>
+  <zorder>label_16</zorder>
+  <zorder>label_17</zorder>
+  <zorder>label_18</zorder>
+  <zorder>label_19</zorder>
+  <zorder>label_20</zorder>
+  <zorder>label_21</zorder>
+  <zorder>label_22</zorder>
+  <zorder>label_23</zorder>
+  <zorder>label_24</zorder>
+  <zorder>label_25</zorder>
+  <zorder>label_26</zorder>
+  <zorder>label_28</zorder>
+  <zorder>label_30</zorder>
+  <zorder>label_31</zorder>
+  <zorder>label_32</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Auger</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>Gear</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>GearFQ</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>Animation</class>
+   <extends>QLabel</extends>
+   <header>pygui.animation</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

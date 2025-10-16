@@ -9,7 +9,7 @@
     "enumSerials": "",
     "paths": "/home/user/.local/lib/python3.12/site-packages/../Scripts/"
   },
-  "project": "TREPEL-250817",
+  "project": "TREPEL-250817.git",
   "target": "192.168.8.10",
   "is_serial": false
 }

@@ -1403,26 +1403,6 @@ QLabel
  </widget>
  <customwidgets>
   <customwidget>
-   <class>Auger</class>
-   <extends>QGroupBox</extends>
-   <header>customplugin</header>
-  </customwidget>
-  <customwidget>
-   <class>Gear</class>
-   <extends>QGroupBox</extends>
-   <header>customplugin</header>
-  </customwidget>
-  <customwidget>
-   <class>Exhauser</class>
-   <extends>QGroupBox</extends>
-   <header>customplugin</header>
-  </customwidget>
-  <customwidget>
-   <class>GearFQ</class>
-   <extends>QGroupBox</extends>
-   <header>customplugin</header>
-  </customwidget>
-  <customwidget>
    <class>Animation</class>
    <extends>QLabel</extends>
    <header>pygui.animation</header>
@@ -1430,13 +1410,42 @@ QLabel
   </customwidget>
   <customwidget>
    <class>RuntimeTrend</class>
-   <extends>QFrame</extends>
+   <extends>QwtPlot</extends>
    <header>pygui.runtimetrend</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Auger</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Gear</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Exhauser</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GearFQ</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
   <include location="../resources.qrc"/>
-  <include location="../../resources.qrc"/>
+  <include location="../resources.qrc"/>
  </resources>
  <connections/>
 </ui>

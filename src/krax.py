@@ -105,9 +105,10 @@ def on_motor_11_run(on: bool):  #фильтр и шнек из него
   motor_12.on = on
   motor_13.on = on
   
-def on_any_motor(on: bool):   #аспирация
+def on_any_motor(on: bool):   #аспирация вкл если что-то заработало, сирена - выкл
   hw.MOTOR_ON_101 = on
   hw.MOTOR_OFF_101 = False
+  hw.SIREN = False
   
 def on_motor_20_run(on:bool):
   compressor_28.on = on
